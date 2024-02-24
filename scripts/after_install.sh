@@ -24,7 +24,10 @@ echo "cd $PROJECT_DIR"
 cd "$PROJECT_DIR" || exit 1
 
 echo "Installing dependencies using npm"
+
 "$NPM_PATH" install
+
+"$NPM_PATH" run build
 
 # Additional commands if needed
 # ...

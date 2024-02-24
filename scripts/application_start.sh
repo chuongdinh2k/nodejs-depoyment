@@ -13,6 +13,6 @@ cd "$PROJECT_DIR" || { echo "Unable to change to directory $PROJECT_DIR"; exit 1
 PM2_PATH=$(which pm2)
 
 # Use pm2 to start your application
-$PM2_PATH start app
+$PM2_PATH start dist/src/app.js -f
 
 echo 'Application start completed'

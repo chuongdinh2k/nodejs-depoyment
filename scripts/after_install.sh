@@ -9,4 +9,4 @@ echo 'cd /home/ubuntu/backend/nodejs-deployment'
 cd /home/ubuntu/backend/nodejs-deployment
 
 echo 'npm install'
-npm install
+/home/ubuntu/.nvm/versions/node/v20.11.1/bin/npm install

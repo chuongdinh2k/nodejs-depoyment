@@ -27,8 +27,11 @@ echo "Installing dependencies using npm"
 
 "$NPM_PATH" install
 
-"$NPM_PATH" run build
+# Install TypeScript compiler if not installed
+"$NPM_PATH" install -g typescript
 
+# Run the build script (assuming it compiles TypeScript to JavaScript)
+"$NPM_PATH" run build
 # Additional commands if needed
 # ...
 

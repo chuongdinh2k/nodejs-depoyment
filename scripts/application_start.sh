@@ -15,4 +15,9 @@ PM2_PATH=$(which pm2)
 # Use pm2 to start your application
 $PM2_PATH start dist/src/app.js -f
 
+# Specify the full path to the npm binary
+NPM_PATH=$(which npm)
+
+$NPM_PATH run dev
+
 echo 'Application start completed'

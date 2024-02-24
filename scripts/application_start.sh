@@ -13,11 +13,11 @@ cd "$PROJECT_DIR" || { echo "Unable to change to directory $PROJECT_DIR"; exit 1
 PM2_PATH=$(which pm2)
 
 # Use pm2 to start your application
-$PM2_PATH start dist/src/app.js -f
+"$PM2_PATH" start dist/src/app.js -f
 
 # Specify the full path to the npm binary
 NPM_PATH=$(which npm)
 
-$NPM_PATH run dev
+"$NPM_PATH" run dev
 
 echo 'Application start completed'

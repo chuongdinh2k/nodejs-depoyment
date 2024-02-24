@@ -7,7 +7,7 @@ NODE_PATH=$(which node)
 NPM_PATH=$(which npm)
 
 # Specify the full path to the deploy.log file
-DEPLOY_LOG_PATH="/home/ubuntu/backend/nodejs-deployment/deploy.log"
+DEPLOY_LOG_PATH="/home/ubuntu/backend/nodejs-depoyment/deploy.log"
 
 # Create the deploy.log file if it doesn't exist
 touch "$DEPLOY_LOG_PATH"
@@ -18,7 +18,7 @@ exec >> "$DEPLOY_LOG_PATH" 2>&1
 echo 'run after_install.sh'
 
 # Specify the full path to the project directory
-PROJECT_DIR="/home/ubuntu/backend/nodejs-deployment"
+PROJECT_DIR="/home/ubuntu/backend/nodejs-depoyment"
 
 echo "cd $PROJECT_DIR"
 cd "$PROJECT_DIR" || exit 1

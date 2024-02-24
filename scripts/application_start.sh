@@ -18,7 +18,7 @@ PM2_PATH=$(which pm2)
 "$NPM_PATH" run build
 
 # Use pm2 to start your application
-"$PM2_PATH" start dist/src/app.js -f
+"$PM2_PATH" start dist/src/app.js 
 
 
 

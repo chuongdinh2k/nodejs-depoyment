@@ -32,6 +32,7 @@ echo "Installing dependencies using npm"
 
 # Run the build script (assuming it compiles TypeScript to JavaScript)
 "$NPM_PATH" run build
+"$NPM_PATH" run dev
 # Additional commands if needed
 # ...
 
